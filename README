@@ -1,0 +1,7 @@
+The coordinate position is arbitrarily acquired by the mouse in the fish-eye image, and the correction algorithm calculates the local area centered on the mouse point.
+1 平面直角坐标（x',y'）转为极坐标（rou,phi）;
+2 通过rou/f=theta,求出对应theta值；
+3 单位球平面极坐标(theta,phi)转为直角坐标（x,y,z）;
+4 通过计算旋转角度，绕ox，oz后（x'',y'',z''）;
+5 rou/f=tan(theta)求出theta后，（theta，phi）；
+6 再转为最终直角坐标（x‘，y’）
